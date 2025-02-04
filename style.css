@@ -272,5 +272,18 @@ footer {
         width: 100%;
         max-width: 350px; 
     }
+
+    .logo-instagram {
+        text-align: center; 
+        margin: 0 auto; 
+        width: 10%; 
+    }
+
+    .logo-instagram img {
+        max-width: 90%; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto; 
+    }
 }
 
