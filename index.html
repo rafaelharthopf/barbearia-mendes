@@ -211,7 +211,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2025 BarberShop Mendes. Todos os direitos reservados.</p>
+        <p>&copy; <span id="current-year"></span> BarberShop Mendes. Todos os direitos reservados.</p>
     </footer>
 
     <script>
@@ -227,6 +227,8 @@
           clickable: true
         }
       });
+
+      document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
