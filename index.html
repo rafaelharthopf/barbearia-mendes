@@ -10,6 +10,11 @@
     <title>BarberShop Mendes - Página Inicial</title>
     <link rel="icon" type="image/png" href="imagens/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <a href="#index" class="skip-link">Página Inicial</a>
@@ -124,28 +129,45 @@
 
       <section id="servicos">
         <h2>Serviços Oferecidos</h2>
-        <ul>
-          <li>
-            <h3>Corte Masculino</h3>
-            <img src="imagens/cabelo1.png" alt="Corte Masculino 1" />
-            <img src="imagens/cabelo2.png" alt="Corte Masculino 2" />
-          </li>
-          <li>
-            <h3>Barba e Design</h3>
-            <img src="imagens/barba1.png" alt="Barba e Design 1" />
-            <img src="imagens/barba2.png" alt="Barba e Design 2" />
-          </li>
-          <li>
-            <h3>Pigmentação de Barba</h3>
-            <img src="imagens/pigmentacao2.png" alt="Pigmentação de Barba 1" />
-            <img src="imagens/pgmentacao1.png" alt="Pigmentação de Barba 2" />
-          </li>
-          <li>
-            <h3>Pacotes para Noivos</h3>
-            <img src="imagens/noivo2.png" alt="Pacotes para Noivos 2" />
-            <img src="imagens/noivo3.png" alt="Pacotes para Noivos 3" />
-          </li>
-        </ul>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h3>Corte Masculino</h3>
+              <img src="imagens/cabelo1.png" alt="Corte Masculino 1" />
+            </div>
+            <div class="swiper-slide">
+              <h3>Corte Masculino</h3>
+              <img src="imagens/cabelo2.png" alt="Corte Masculino 2" />
+            </div>
+            <div class="swiper-slide">
+              <h3>Barba e Design</h3>
+              <img src="imagens/barba1.png" alt="Barba e Design 1" />
+            </div>
+            <div class="swiper-slide">
+              <h3>Barba e Design</h3>
+              <img src="imagens/barba2.png" alt="Barba e Design 2" />
+            </div>
+            <div class="swiper-slide">
+              <h3>Pigmentação de Barba e Cabelo</h3>
+              <img
+                src="imagens/pigmentacao2.png"
+                alt="Pigmentação de Barba 1"
+              />
+            </div>
+            <div class="swiper-slide">
+              <h3>Pigmentação de Barba e Cabelo</h3>
+              <img src="imagens/pgmentacao1.png" alt="Pigmentação de Barba 2" />
+            </div>
+            <div class="swiper-slide">
+              <h3>Pacotes para Noivos</h3>
+              <img src="imagens/noivo2.png" alt="Pacotes para Noivos 2" />
+            </div>
+            <div class="swiper-slide">
+              <h3>Pacotes para Noivos</h3>
+              <img src="imagens/noivo3.png" alt="Pacotes para Noivos 3" />
+            </div>
+          </div>
+        </div>
 
         <h3>Confira Nossos Pacotes</h3>
         <div class="pacotes">
@@ -154,6 +176,7 @@
           <img src="imagens/cabeloebarba.png" alt="Pacote Cabelo Ilimitado" />
         </div>
 
+        <div class="pacotes-container">
         <p>Clique no botão abaixo para ver mais detalhes dos pacotes:</p>
         <a
           href="https://app.galaxpay.com.br/barbershop-mendes/assinatura"
@@ -161,25 +184,49 @@
           class="pacotes-btn"
           >Ver Pacotes</a
         >
+          </div>
       </section>
 
       <section id="redes-sociais">
         <h2>Nos Encontre nas Redes</h2>
         <p>Nos siga para promoções e novidades:</p>
         <ul>
-            <li>
-                <div class="logo-instagram">
-                <a href="https://www.instagram.com/barbershopmendes/" target="_blank">
-                    <img src="imagens/instagram-logo.png" alt="Instagram" width="32" height="32" >
-                </a>
+          <li>
+            <div class="logo-instagram">
+              <a
+                href="https://www.instagram.com/barbershopmendes/"
+                target="_blank"
+              >
+                <img
+                  src="imagens/instagram-logo.png"
+                  alt="Instagram"
+                  width="32"
+                  height="32"
+                />
+              </a>
             </div>
-            </li>
+          </li>
         </ul>
-    </section>
+      </section>
     </main>
 
     <footer>
       <p>&copy; 2025 BarberShop Mendes. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      });
+    </script>
   </body>
 </html>

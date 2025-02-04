@@ -229,6 +229,28 @@ ul li img {
     background: #1ebe57;
 }
 
+.swiper-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .swiper-slide img {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    color: white;
+  }
+
 footer {
     text-align: center;
     padding: 20px;
@@ -285,5 +307,27 @@ footer {
         display: block; 
         margin: 0 auto; 
     }
+
+    .swiper-container {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+      }
+      .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .swiper-slide img {
+        width: 80%;
+        max-width: 300px;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      .swiper-button-next, .swiper-button-prev {
+        color: white;
+      }
 }
 
